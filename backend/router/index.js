@@ -4,7 +4,6 @@ const Portal = require("../model/Portal");
 
 router.post("/post", (req, res) => {
   var portalData = Portal(req.body);
-
   Portal.create(portalData)
     .then((portalPost) => {
       res.json({
